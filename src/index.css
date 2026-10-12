@@ -1234,13 +1234,23 @@ button, a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .profile-card,
-  .profile-card::before,
-  .holo-ring,
-  .avatar-particles span {
-    animation: none !important;
-    transition: none !important;
-  }
+  .profile-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 24px;
+  box-sizing: border-box;
+  margin-inline: auto;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+}
 }
 
 
